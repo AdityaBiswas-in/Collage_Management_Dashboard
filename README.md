@@ -80,9 +80,8 @@ JavaScript
 
 
 
----
 
-<H2>🖼️ Project Screenshots</H2> 
+<!-- <H2>🖼️ Project Screenshots</H2> 
 
 
 Dashboard Overview
@@ -99,4 +98,4 @@ Student Management
 
 
 Attendance System
-![image alt](https://github.com/AdityaBIswas007/College_Management_Dashboard/blob/0feead0dcfdcf4ce2ad522049dfbb336072e4ac3/Screenshot%202026-04-03%20165854.png)
+![image alt](https://github.com/AdityaBIswas007/College_Management_Dashboard/blob/0feead0dcfdcf4ce2ad522049dfbb336072e4ac3/Screenshot%202026-04-03%20165854.png) -->
