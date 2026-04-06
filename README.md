@@ -7,7 +7,7 @@ A fully interactive and editable College Management Dashboard built using HTML, 
 
 <H1>🚀 Live Demo</H1>  
 
-👉[link Text](https://adityabiswas-in.github.io/College_Management_Dashboard/)
+👉[link Text](https://adityabiswas-in.github.io/Collage_Management_Dashboard/)
 
 
 ---
