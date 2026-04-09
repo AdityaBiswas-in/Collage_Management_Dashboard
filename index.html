@@ -9,13 +9,18 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Three.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
     <!-- Google Identity Services -->
     <script src="https://accounts.google.com/gsi/client" async defer></script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Background 3D Canvas -->
+    <canvas id="bg-canvas"></canvas>
+    
     <div class="app-container">
         <!-- Sidebar -->
         <aside class="sidebar" id="sidebar">
@@ -48,12 +53,6 @@
                     <i class="fa-solid fa-file-contract"></i> <span>Exams</span>
                 </a>
             </nav>
-
-            <div class="sidebar-footer">
-                <button id="theme-btn" class="theme-btn">
-                    <i class="fa-solid fa-moon"></i> <span>Dark Mode</span>
-                </button>
-            </div>
         </aside>
 
         <!-- Main Content -->
@@ -79,28 +78,28 @@
             <!-- Dashboard Section -->
             <section id="dashboard" class="page-section active">
                 <div class="stats-grid">
-                    <div class="stat-card">
+                    <div class="stat-card" onclick="switchPage('departments')">
                         <div class="icon-box blue"><i class="fa-solid fa-building"></i></div>
                         <div class="stat-content">
                             <p>Total Departments</p>
                             <h3 id="dash-dept-count" class="counter">0</h3>
                         </div>
                     </div>
-                    <div class="stat-card">
+                    <div class="stat-card" onclick="switchPage('students')">
                         <div class="icon-box green"><i class="fa-solid fa-users"></i></div>
                         <div class="stat-content">
                             <p>Total Students</p>
                             <h3 id="dash-student-count" class="counter">0</h3>
                         </div>
                     </div>
-                    <div class="stat-card">
+                    <div class="stat-card" onclick="switchPage('notices')">
                         <div class="icon-box yellow"><i class="fa-solid fa-bell"></i></div>
                         <div class="stat-content">
                             <p>Active Notices</p>
                             <h3 id="dash-notice-count" class="counter">0</h3>
                         </div>
                     </div>
-                    <div class="stat-card">
+                    <div class="stat-card" onclick="switchPage('exams')">
                         <div class="icon-box purple"><i class="fa-solid fa-graduation-cap"></i></div>
                         <div class="stat-content">
                             <p>Upcoming Exams</p>
@@ -703,5 +702,6 @@
     <div id="toast" class="toast hidden"></div>
 
     <script src="script.js"></script>
+    <script src="three-scene.js"></script>
 </body>
 </html>

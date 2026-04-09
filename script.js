@@ -52,7 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
     collegeData.exams.forEach(e => { if (!e.sem) e.sem = 1; });
     collegeData.resources.forEach(r => { if (!r.sem) r.sem = null; });
 
-    initTheme();
     setupNavigation();
     setupKeyboardShortcuts();
     checkAuthState();
@@ -120,33 +119,7 @@ window.switchPage = function(target) {
     document.querySelector(`.nav-link[data-target="${target}"]`).click();
 }
 
-/* ---------- Theme Options ---------- */
-function initTheme() {
-    const savedTheme = localStorage.getItem('erp_theme');
-    const themeBtn = document.getElementById('theme-btn');
-    const icon = themeBtn.querySelector('i');
-    const text = themeBtn.querySelector('span');
 
-    if (savedTheme === 'dark') {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        icon.className = 'fa-solid fa-sun';
-        text.textContent = 'Light Mode';
-    }
-
-    themeBtn.addEventListener('click', () => {
-        if (document.documentElement.getAttribute('data-theme') === 'dark') {
-            document.documentElement.removeAttribute('data-theme');
-            localStorage.setItem('erp_theme', 'light');
-            icon.className = 'fa-solid fa-moon';
-            text.textContent = 'Dark Mode';
-        } else {
-            document.documentElement.setAttribute('data-theme', 'dark');
-            localStorage.setItem('erp_theme', 'dark');
-            icon.className = 'fa-solid fa-sun';
-            text.textContent = 'Light Mode';
-        }
-    });
-}
 
 /* ---------- Modals & Toasts ---------- */
 window.openModal = function(id) {
@@ -211,7 +184,7 @@ function updateDashboard() {
                         <span>${totalStudents}/${maxTotal} (${perc}%)</span>
                     </div>
                     <div class="capacity-bar-bg">
-                        <div class="capacity-bar-fill ${perc >= 90 ? 'bg-danger' : 'bg-success'}" style="width: ${perc}%; background-color: ${perc >= 90 ? 'var(--danger)' : 'var(--success)'};"></div>
+                        <div class="capacity-bar-fill" style="width: ${perc}%; background-color: ${perc >= 90 ? 'var(--danger)' : 'var(--accent)'}; box-shadow: 0 0 10px ${perc >= 90 ? 'rgba(239, 68, 68, 0.4)' : 'rgba(255, 49, 49, 0.4)'};"></div>
                     </div>
                 </div>
             `;
