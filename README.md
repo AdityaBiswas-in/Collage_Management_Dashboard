@@ -9,6 +9,11 @@ A fully interactive and editable College Management Dashboard built using HTML, 
 
 👉[Click Here ](https://adityabiswas-in.github.io/Collage_Management_Dashboard/)
 
+---
+
+## 📸 Preview
+
+![Collage_Management_Dashboard](https://res.cloudinary.com/dhrjq4xgv/image/upload/v1776528942/college_dashboard_project_wpsemb.png) <!-- Replace with your actual screenshot -->
 
 ---
 
