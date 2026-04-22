@@ -82,25 +82,3 @@ HTML5
 CSS3
 
 JavaScript 
-
-
-
-
-<!-- <H2>🖼️ Project Screenshots</H2> 
-
-
-Dashboard Overview
-![image alt](https://github.com/AdityaBIswas007/College_Management_Dashboard/blob/d57b4ef176c9e0fe0802784727746981f0b48564/Screenshot%202026-04-03%20162520.png)
-
-
-
-Department & Semester View
-![image alt](https://github.com/AdityaBIswas007/College_Management_Dashboard/blob/53260b402fe52959c0827a40a0b7ee5368be3c5f/Screenshot%202026-04-03%20165807.png)
-
-
-Student Management
-![image alt](https://github.com/AdityaBIswas007/College_Management_Dashboard/blob/0feead0dcfdcf4ce2ad522049dfbb336072e4ac3/Screenshot%202026-04-03%20165835.png)
-
-
-Attendance System
-![image alt](https://github.com/AdityaBIswas007/College_Management_Dashboard/blob/0feead0dcfdcf4ce2ad522049dfbb336072e4ac3/Screenshot%202026-04-03%20165854.png) -->
